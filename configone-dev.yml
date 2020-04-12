@@ -1,2 +1,9 @@
-spring.freemarker.template-loader-path=classpath:/templates
-spring.freemarker.prefer-file-system-access=false
+zuul:
+  routes:
+    service-provider:
+      path: /service/**
+      serviceId: eureka-service
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
